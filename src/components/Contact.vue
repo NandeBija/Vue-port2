@@ -21,15 +21,15 @@
               <div class="address">
                 <div>
                   <i class="material-icons">email</i>
-                  <p>@mail.com</p>
+                  <p>Nandebija@mail.com</p>
                 </div>
                 <div>
                   <i class="material-icons">map</i>
-                  <p>Address</p>
+                  <p>Cape Town</p>
                 </div>
                 <div>
                   <i class="material-icons">phone</i>
-                  <p>+27 12 3456 789</p>
+                  <p>+27 79 172 4829</p>
                 </div>
               </div>
             </div>
