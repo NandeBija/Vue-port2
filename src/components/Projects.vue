@@ -102,7 +102,7 @@ export default {
 <style scoped>
 #projects {
   background-color: #f5d3d52c;
-  height: 110vh;
+  min-height: 110vh;
   padding-top: 54px;
 }
 .h2,
@@ -149,18 +149,18 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .card {
-    height: 200px;
+    min-height: 200px;
   }
   .card img {
     height: 110px;
   }
   #projects {
     background-color: #f5d3d52c;
-    height: 275vh;
+    min-height: 275vh;
     padding-top: 54px;
   }
   .card {
-    height: 350px;
+    min-height: 450px;
     width: 90%;
     margin-left: 4%;
   }

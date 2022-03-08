@@ -16,58 +16,57 @@
                 <div class="aboutImg"></div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="col-sm">
-                <div class="aboutContent">
-                  <!-- Merge skills into landing page -->
-                  <strong
-                    ><span style="border-bottom: 3px solid red; font-size: 25px"
-                      >Skills:</span
-                    ></strong
-                  ><br />
 
-                  <div class="container" id="myAbt">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <p class="sp">HTML</p>
-                        <div class="container shadow-lg" style="padding: 0%">
-                          <div class="skills html">90%</div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <p class="sp">CSS</p>
-                        <div class="container shadow-lg" style="padding: 0%">
-                          <div class="skills css">80%</div>
-                        </div>
+            <div class="col-sm">
+              <div class="aboutContent">
+                <!-- Merge skills into landing page -->
+                <strong
+                  ><span style="border-bottom: 3px solid red; font-size: 25px"
+                    >Skills:</span
+                  ></strong
+                ><br />
+
+                <div class="container" id="myAbt">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="sp">HTML</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills html">90%</div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <p class="sp">JavaScript</p>
-                        <div class="container shadow-lg" style="padding: 0%">
-                          <div class="skills js">65%</div>
-                        </div>
+                    <div class="col-sm-6">
+                      <p class="sp">CSS</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills css">80%</div>
                       </div>
-                      <div class="col-sm-6">
-                        <p class="sp">Vue JS</p>
-                        <div class="container shadow-lg" style="padding: 0%">
-                          <div class="skills bootstrap">77%</div>
-                        </div>
-                      </div>
-                      <br />
-
-                      <p style="text-align: justify; padding-top: 14px">
-                        <strong>Soft Skills:</strong><br />
-                        Strong verbal and written communication skills,
-                        strategic planning, time management skills.
-                      </p>
-                      <p style="text-align: justify">
-                        <strong>Technical Skills: Computer-literate;</strong
-                        ><br />
-                        Data collection, capturing and processing; Computer
-                        software [ArcGIS, QGIS, MS Excel, MS Word]
-                      </p>
                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="sp">JavaScript</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills js">65%</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="sp">Vue JS</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills bootstrap">77%</div>
+                      </div>
+                    </div>
+                    <br />
+
+                    <p style="text-align: justify; padding-top: 14px">
+                      <strong>Soft Skills:</strong><br />
+                      Strong verbal and written communication skills, strategic
+                      planning, time management skills.
+                    </p>
+                    <p style="text-align: justify">
+                      <strong>Technical Skills: Computer-literate;</strong
+                      ><br />
+                      Data collection, capturing and processing; Computer
+                      software [ArcGIS, QGIS, MS Excel, MS Word]
+                    </p>
                   </div>
                 </div>
               </div>
@@ -183,7 +182,7 @@ h1 {
   #About {
     background-color: #f5d3d52c;
     padding-top: 59px;
-    min-height: 165vh;
+    min-height: 120vh;
   }
   #myAbt {
     justify-items: start;
