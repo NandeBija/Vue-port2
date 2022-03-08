@@ -1,129 +1,149 @@
 <template>
-  <section>
-    <div id="home">
-      <div class="box">
-        <h1>
-          <span class="helloText"><strong>Hello.</strong><br /></span>
-          <div class="myName">I'm Nande Bija.</div>
-          <br />
-        </h1>
-        <br />
-        <p class="headerContent">
-          | Full-stack developer |<br /><span class="social">
-            <a href="" target="_blank" class="fa fa-linkedin"></a>
+  <html>
+  <body id="bod">
+    <header id="showcase" class="home">
+      <h1><span style="color:white;">Hello, <br>I'm </span> NANDE BIJA</h1>
+      <div id="content" class="container">
+     <p class="headerContent">
+          | Junior Full-stack developer  |<br /><span class="social">
+            <a href="https://www.linkedin.com/in/nande-bija-6333441b8/" target="_blank" class="fa fa-linkedin"></a>
             <a
-              href="https://github.com"
+              href="https://github.com/NandeBija"
               target="_blank"
               class="fa fa-github"
             ></a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              class="fa fa-instagram"
-            ></a>
+            
           </span>
         </p>
-      </div>
-    </div>
-  </section>
+    </div> 
+    
+    <a href="#About" class="btn">More about me</a>
+    </header>
+    
+   
+  </body>
+</html>
 </template>
 
 <script>
-export default {};
+export default {
+
+}
 </script>
 
 <style scoped>
-.myName {
-  width: 15ch;
-  animation: typing 3s steps(28) 1 normal both;
-  white-space: nowrap;
-  overflow: hidden;
-
-  font-size: 3.7em;
-  color: #ff0000b8;
-  padding-top: 0%;
-  font-weight: 900;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-body {
+*{
   margin: 0px;
+  padding: 0px;
 }
-#home {
-  height: 100vh;
+#bod{
+  min-height:100 hv;
+}
+
+.home {
+  min-height: 100vh;
   background-image: url("https://ucarecdn.com/118482c6-5bbc-4de5-ade2-63c59873006f/image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
-h1 {
-}
-.box {
-  text-align: center;
-  padding-top: 9%;
-}
-.helloText {
-  font-size: 3.5em;
-  color: #f5f5f5;
-  text-align: center;
-}
 
+body{
+  font-family: Ariel, Helvetica, sans-serif;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+}
 .headerContent {
   font-size: 2.5em;
   color: #ece8e8ef;
+  position: relative;
+  bottom: 65px;
 }
 .headerContent a {
   padding-left: 10px;
   padding-right: 10px;
 }
-@media screen and (max-width: 600px) {
-  #home {
-    height: 80vh;
-  }
-  .box {
-    text-align: center;
-  }
-  .hellotext {
-    padding-right: 68px;
-  }
-  .myName {
-    font-size: 2.8em;
-    color: #ff0000b8;
-  }
-  .headerContent {
-    font-size: 2.5em;
-    color: #ece8e8ef;
-    padding-right: 9%;
-  }
-  .wrapper {
-    height: 100vh;
-    display: flex;
-  }
-  .myName {
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: monospace;
-    font-size: 2.1em;
-    color: #ff0000b8;
-    padding-top: 0%;
-    font-weight: 900;
-    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial,
-      Sans-serif;
+
+.container{
+  max-width: 960px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+/* #showcase{
+  height: 300px;
+} */
+
+#showcase h1{
+   font-size: 5.9em;
+  color: #ff0000b8;
+  line-height: 1.3;
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-weight: 800;
+}
+
+@keyframes heading{
+  0% {top: -50px;}
+  100% {top: 200px;}
+}
+
+#content {
+  position: relative;
+  top:300px;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content{
+  0% {left: -1000px;}
+  100% {left: 0px;}
+}
+
+.btn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top:250px;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: rgb(255, 253, 253) 2px solid;
+    border-radius: 30%;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
+.btn:hover{
+  transform: rotateY(360deg);
+}
+@media screen and (max-width: 600px) {
+  .home {
+    height: 200vh;
   }
+  #showcase h1{
+   font-size: 4.9em;
+  color: #ff0000b8;
+  line-height: 1.3;
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-weight: 800;
+}
+}
+@keyframes btn {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 </style>

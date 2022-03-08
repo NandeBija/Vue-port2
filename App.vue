@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <hom />
+  <Home />
   <About />
   <Resume />
   <Projects />
@@ -16,7 +16,7 @@
 
 <script>
 import Navbar from "./components/Navbar.vue";
-import hom from "./components/hom.vue";
+import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Resume from "./components/Resume.vue";
 import Contact from "./components/Contact.vue";
@@ -27,7 +27,7 @@ import Testimonials from "./components/Testimonials.vue";
 export default {
   components: {
     About,
-    hom,
+    Home,
     Contact,
     Navbar,
     Footer,
