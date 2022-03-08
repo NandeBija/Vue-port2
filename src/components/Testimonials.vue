@@ -6,31 +6,8 @@
         <h2 class="h2">
           <span style="border-bottom: 3px solid red">Testimonials</span>
         </h2>
-        <!--
-        <div v-for="test of testimonial" :key="test.name" class="col-sm-6">
-          <div class="test">
-            <img
-              :src="test.img"
-              class="test-img-top"
-              alt="Godwin's testimonial picture"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                <span class="comma">"</span>{{ test.text
-                }}<span class="comma"> "</span>
-              </h5>
-              <p class="card-text">
-                {{ test.name }}<span class="comma">|</span>
-                {{ test.relationship }}
-              </p>
-            </div>
-          </div>
-        </div>
-  -->
       </div>
     </div>
-  </section>
-  <section>
     <div class="container">
       <div class="slider">
         <input type="radio" name="testimonial" id="t-1" />
@@ -217,7 +194,7 @@ export default {
 
 <style scoped>
 #testimonil {
-  height: 28vh;
+  min-height: 100vh;
   padding-top: 59px;
 }
 .h2,
@@ -258,8 +235,8 @@ h1 {
 /* cellphone responsiveness */
 @media screen and (max-width: 600px) {
   #testimonil {
-    height: 300vh;
-    padding-top: 59px;
+    min-height: 100vh;
+    /* padding-top: 59px; */
   }
 }
 
@@ -304,7 +281,7 @@ h1 {
   position: relative;
   min-height: 518px;
   perspective: 559px;
-
+  margin-top: 50px;
   overflow: hidden;
 }
 .testimonials .item {
