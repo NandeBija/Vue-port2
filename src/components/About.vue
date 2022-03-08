@@ -12,7 +12,7 @@
           <div class="row" style="padding-top: 80px">
             <div class="col-4">
               <div class="col-6">
-                <img src="../assets/land.jpeg" alt="Nande" />
+                <img src="../assets/picture.jpg" alt="Nande" />
                 <div class="aboutImg"></div>
               </div>
             </div>
@@ -183,6 +183,7 @@ h1 {
 }
 .col-6 img {
   border-radius: 50%;
+  object-fit: cover;
   height: 350px;
   width: 260px;
   position: relative;
