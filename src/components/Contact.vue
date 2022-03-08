@@ -57,6 +57,7 @@
                   required
                   v-model="email"
                   placeholder="Enter your email"
+                  name="email"
                 />
 
                 <label> Number:</label>
@@ -65,6 +66,7 @@
                   required
                   v-model="number"
                   placeholder="Enter your number"
+                  name="number"
                 />
                 <div v-if="numberError" class="number">{{ numberError }}</div>
 
@@ -86,10 +88,10 @@
                 >
                 </textarea>
                 <!-- working with checkboxes using booleans  -->
-                <div class="terms">
+                <!-- <div class="terms">
                   <input type="checkbox" v-model="terms" required />
                   <label> Accept terms and conditions</label>
-                </div>
+                </div> -->
                 <div class="submit">
                   <button @click="submit">Submit</button>
                 </div>
