@@ -91,7 +91,6 @@ export default {
       ],
     };
   },
- 
 };
 </script>
 
@@ -99,6 +98,7 @@ export default {
 #resume {
   padding-top: 45px;
   font-size: 1em;
+  min-height: 100vh;
 }
 
 .h2,
@@ -155,7 +155,7 @@ h4 {
   text-align: center;
 }
 #cont2 {
-  height: 79vh;
+  min-height: 100vh;
   padding-top: 0;
 }
 .resum {

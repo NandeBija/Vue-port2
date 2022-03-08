@@ -1,7 +1,7 @@
 <template>
   <html>
   <body id="bod">
-    <header id="showcase" class="home">
+    <header id="home" class="home">
       <h1><span style="color:white;">Hello, <br>I'm </span> NANDE BIJA</h1>
       <div id="content" class="container">
      <p class="headerContent">
@@ -76,7 +76,7 @@ body{
   height: 300px;
 } */
 
-#showcase h1{
+#home h1{
    font-size: 5.9em;
   color: #ff0000b8;
   line-height: 1.3;
@@ -131,7 +131,7 @@ body{
   .home {
     height: 200vh;
   }
-  #showcase h1{
+  #home h1{
    font-size: 4.9em;
   color: #ff0000b8;
   line-height: 1.3;
