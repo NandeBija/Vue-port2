@@ -16,7 +16,7 @@
                 <div class="aboutImg"></div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-12">
               <div class="col-sm">
                 <div class="aboutContent">
                   <!-- Merge skills into landing page -->
@@ -103,7 +103,7 @@ export default {};
 #About {
   background-color: #f5d3d52c;
   padding-top: 59px;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1.2em;
 }
 .h2,
@@ -183,7 +183,7 @@ h1 {
   #About {
     background-color: #f5d3d52c;
     padding-top: 59px;
-    height: 165vh;
+    min-height: 165vh;
   }
   #myAbt {
     justify-items: start;
