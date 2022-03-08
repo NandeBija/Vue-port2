@@ -40,18 +40,36 @@
                         <div class="skills css">80%</div>
                       </div>
                     </div>
+                    <div class="col-sm-6">
+                      <p class="sp">MySQL</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills html">90%</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="sp">Bootsrap</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills html">90%</div>
+                      </div>
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <p class="sp">JavaScript</p>
                       <div class="container shadow-lg" style="padding: 0%">
-                        <div class="skills js">65%</div>
+                        <div class="skills html">90%</div>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <p class="sp">Vue JS</p>
                       <div class="container shadow-lg" style="padding: 0%">
-                        <div class="skills bootstrap">77%</div>
+                        <div class="skills js">88%</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="sp">Node JS</p>
+                      <div class="container shadow-lg" style="padding: 0%">
+                        <div class="skills html">90%</div>
                       </div>
                     </div>
                     <br />
@@ -153,7 +171,7 @@ h1 {
   border-radius: 10px;
 }
 .js {
-  width: 50%;
+  width: 85%;
   background-color: #f44336;
   border-radius: 10px;
 }

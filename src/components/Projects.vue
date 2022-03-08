@@ -149,7 +149,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .card {
-    min-height: 200px;
+    min-height: 150px;
   }
   .card img {
     height: 110px;
@@ -160,7 +160,7 @@ h1 {
     padding-top: 54px;
   }
   .card {
-    min-height: 450px;
+    min-height: 400px;
     width: 90%;
     margin-left: 4%;
   }
