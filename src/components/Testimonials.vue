@@ -298,7 +298,7 @@ h1 {
   width: 750px;
   text-align: center;
   transition: transform 0.4s;
-  -webkit-transform-style: preserve-3d;
+  /* -webkit-transform-style: preserve-3d; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   user-select: none;
   cursor: pointer;
