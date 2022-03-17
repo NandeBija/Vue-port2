@@ -12,12 +12,13 @@
                 <ul v-for="work of workExp" :key="work.title" class="timeline">
                   <li>
                     <h7 class="h7">{{ work.title }}</h7
-                    ><br />
-
-                    <p class="float-right">{{ work.date }}</p>
+                    > <p class="float-right">{{ work.date }}</p><br />
+                   
                     <p>
                       {{ work.description }}
                     </p>
+
+                    <p ><span style="color: red;">{{ work.reason }}</span> {{work.why}}</p>
                   </li>
                 </ul>
               </div>
@@ -34,6 +35,7 @@
 
                     <p class="float-right">{{ edu.date }}</p>
                     <p>{{ edu.description }}</p>
+                    
                   </li>
                 </ul>
               </div>
@@ -55,19 +57,25 @@ export default {
           title: "Research intern @ HSRC",
           date: "30 May, 2021",
           description:
-            " I worked as a research assistance at Human Science Research Council of South Africa.",
+            " I worked as a research assistant at Human Science Research Council of South Africa.",
+          reason: "Reason for leaving:",
+          why: "Contract ended"
         },
         {
           title: " Freelance cartographer",
           date: "June, 2020",
           description:
             " Did some freelance work creating maps for researchers within the GIS field from mid-2020",
+             reason: "Reason for stopping:",
+          why: "Enrolled for coding course "
         },
         {
           title: " Tutor",
           date: "24 February, 2019",
           description:
             " Worked as a Geographic Information Sciences tutor at the University of Western Cape from 2019 to 2020.",
+             reason: "Reason for leaving:",
+          why: "Contract ended"
         },
       ],
       education: [
@@ -80,17 +88,18 @@ export default {
           title: " Honours degree ",
           date: "Feb, 2020 - Nov, 2020",
           description:
-            " Completed Honours degree in GIS and Enviroonmental Management at the UNiversity of Western Cape",
+            " Completed Honours degree in Geographical Information Systems (GIS) and Environmental Management at the University of Western Cape",
         },
         {
-          title: " Graduated for Honours ",
+          title: " Undergraduate degree ",
           date: "24 Feb 2017 - 20 Nov 2019",
           description:
-            " Undergraduate degree in Geography and Environmental Studies at the University of Western Cape",
+            " Completed BA Undergraduate degree in Geography and Environmental Studies at the University of Western Cape",
         },
       ],
     };
   },
+ 
 };
 </script>
 
@@ -98,7 +107,6 @@ export default {
 #resume {
   padding-top: 45px;
   font-size: 1em;
-  min-height: 100vh;
 }
 
 .h2,
@@ -155,7 +163,7 @@ h4 {
   text-align: center;
 }
 #cont2 {
-  min-height: 100vh;
+  height: 79vh;
   padding-top: 0;
 }
 .resum {
@@ -169,7 +177,15 @@ h4 {
     flex-wrap: wrap;
     padding-top: 15px;
   }
+  .h1,
+h1 {
+  text-align: center;
+  color: gray;
+  font-size: medium;
+  padding-top: 3%;
 }
+}
+
 @media screen and (max-width: 980px) {
   ul {
     display: flex;

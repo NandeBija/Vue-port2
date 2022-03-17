@@ -120,7 +120,7 @@ export default {};
 #About {
   background-color: #f5d3d52c;
   padding-top: 59px;
-  min-height: 100vh;
+  min-height: 120vh;
   font-size: 1.2em;
 }
 .h2,

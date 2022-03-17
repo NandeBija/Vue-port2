@@ -5,7 +5,7 @@
     ></a>
     <a href="#About">About <i class="fa fa-user"></i></a>
     <a href="#resume">Resume <i class="fa fa-briefcase"></i></a>
-    <a href="#projects">Projects <i class="fa fa-cogs"></i></a>
+    <a href="#Projects">Projects <i class="fa fa-cogs"></i></a>
     <a href="#testimonil">Testimonials <i class="fa fa-commenting-o"></i></a>
     <a href="#cont2">Contact <i class="fa fa-envelope"></i></a>
     <a href="javascript:void(0);" class="icon" @click="myFunction">
@@ -53,11 +53,11 @@ export default {
 }
 
 .topnav a:hover {
-  color: #d69f7e;
+  color: #fc5356;
 }
 
 .topnav a.active {
-  background-color: #d69f7e;
+  background-color: #fc5356;
   color: white;
 }
 

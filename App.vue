@@ -55,6 +55,7 @@ body {
   position: relative;
   font-size: 22px;
   text-align: center;
+  text-decoration: none;
 
   padding-left: 2px;
   color: #423d3d;
@@ -65,6 +66,7 @@ body {
 }
 .social a {
   color: white;
+  text-decoration: none;
 }
 #back-top {
   position: fixed;

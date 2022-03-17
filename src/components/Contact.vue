@@ -7,43 +7,101 @@
       </h2>
       <div class="container">
         <div class="row" id="form">
-          <div class="col" id="left">
-            <div class="left-container">
-              <div class="left-inner-container">
-                <h2>Let's Chat!</h2>
-                <p>
-                  Whether you have a question, want to start a project or simply
-                  want to connect.
-                </p>
-                <br />
-                <p>Feel free to send me a message in the contact form</p>
-              </div>
-              <div class="address">
-                <div>
-                  <i class="material-icons">email</i>
-                  <p>Nandebija@mail.com</p>
-                </div>
-                <div>
-                  <i class="material-icons">map</i>
-                  <p>Cape Town</p>
-                </div>
-                <div>
-                  <i class="material-icons">phone</i>
-                  <p>+27 79 172 4829</p>
+          <div class="container py-5 h-100">
+            <div
+              class="row d-flex justify-content-center align-items-center h-100"
+            >
+              <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem">
+                  <div class="row g-0">
+                    <div class="col-md-6 col-lg-5 d-none d-md-block">
+                      <img
+                        src="https://i.postimg.cc/fL4K0VGL/markus-winkler-q3-QPw37-J6-Xs-unsplash.jpg"
+                        alt="login form"
+                        class="img-fluid"
+                        style="border-radius: 1rem 0 0 1rem"
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="container">
+                        <form
+                          action="https://formspree.io/f/xknyjnke"
+                          method="post"
+                          target="_blank"
+                        >
+                          <!-- the 'dot prevent' prevents the form from cleaaring the data back to default after submitting -->
+
+                          <label> Name:</label>
+                          <input
+                            name="name"
+                            type="text"
+                            required
+                            v-model="name"
+                            placeholder="Enter full name and surname"
+                          />
+                          <label> Email:</label>
+                          <input
+                            type="email"
+                            required
+                            v-model="email"
+                            placeholder="Enter your email"
+                          />
+                          <!--  dropdown for the role of whoever uses the form-->
+                          <label> Role:</label>
+                          <select v-model="role">
+                            <option value="developer">Web developer</option>
+                            <option value="designer">Web designer</option>
+                            <option value="interested">Interested party</option>
+                            <option value="other">Other</option>
+                          </select>
+                          <label for="inputMessage"> Message:</label>
+                          <textarea
+                            class="form-control"
+                            name="message"
+                            id="inputMessage"
+                            rows="4"
+                            required
+                          >
+                          </textarea>
+
+                          <div class="submit">
+                            <button @click="submit">Submit</button>
+                          </div>
+                          <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0 text-muted">
+                              OR
+                            </p>
+                          </div>
+
+                          <a
+                            class="btn btn-primary btn-lg btn-block"
+                            style="background-color: #3b5998"
+                            href="https://www.linkedin.com/in/nande-bija-6333441b8/"
+                            role="button"
+                          >
+                            <img
+                              src="https://img.icons8.com/fluency/30/000000/linkedin.png"
+                              style="padding: 8px"
+                            />Connect with LinkedIn
+                          </a>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="container">
-              <form
+          <!-- <div class="col">
+            <div class="container"> -->
+          <!-- <form
                 action="https://formspree.io/f/xknyjnke"
                 method="post"
-                target="_blank"
-              >
-                <!-- the 'dot prevent' prevents the form from cleaaring the data back to default after submitting -->
+                target="_blank" -->
+          <!-- > -->
+          <!-- the 'dot prevent' prevents the form from cleaaring the data back to default after submitting -->
 
-                <label> Name:</label>
+          <!-- <label> Name:</label>
                 <input
                   name="name"
                   type="text"
@@ -57,7 +115,6 @@
                   required
                   v-model="email"
                   placeholder="Enter your email"
-                  name="email"
                 />
 
                 <label> Number:</label>
@@ -66,12 +123,11 @@
                   required
                   v-model="number"
                   placeholder="Enter your number"
-                  name="number"
                 />
-                <div v-if="numberError" class="number">{{ numberError }}</div>
+                <div v-if="numberError" class="number">{{ numberError }}</div> -->
 
-                <!--  dropdown for the role of whoever uses the form-->
-                <label> Role:</label>
+          <!--  dropdown for the role of whoever uses the form-->
+          <!-- <label> Role:</label>
                 <select v-model="role">
                   <option value="developer">Web developer</option>
                   <option value="designer">Web designer</option>
@@ -86,18 +142,18 @@
                   rows="5"
                   required
                 >
-                </textarea>
-                <!-- working with checkboxes using booleans  -->
-                <!-- <div class="terms">
+                </textarea> -->
+          <!-- working with checkboxes using booleans  -->
+          <!-- <div class="terms">
                   <input type="checkbox" v-model="terms" required />
                   <label> Accept terms and conditions</label>
-                </div> -->
+                </div>
                 <div class="submit">
                   <button @click="submit">Submit</button>
                 </div>
-              </form>
-            </div>
-          </div>
+              </form> -->
+          <!-- </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -140,32 +196,34 @@ export default {
 }
 form {
   max-width: 100%;
-  margin: 30px auto;
   text-align: left;
   padding: 40px;
   border-radius: 10px;
-  background: #cf9f811e;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.img-fluid {
+  height: 100%;
+  width: 100%;
 }
 #form {
   background-color: white;
   border-radius: 10px;
   padding-bottom: 20px;
 }
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
 .h1,
 h1 {
   text-align: center;
   color: gray;
   font-size: medium;
   padding-top: 1.5%;
-}
-
-.col {
-  height: 20%;
 }
 .address {
   display: flex;
@@ -197,7 +255,7 @@ select {
   width: 100%;
   box-sizing: border-box;
   border: none;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
   color: #555;
 }
 .cont {
@@ -227,17 +285,24 @@ input[type="checkbox"] {
 .contact {
   box-shadow: 20px;
 }
+.btn {
+  margin-left: 80px;
+  text-align: center;
+  height: 55px;
+}
 button {
-  background: white;
+  background: #dc3545;
   border: 1px;
   float: right;
   padding-bottom: 20px;
+
   padding: 5px 15px;
   border-radius: 20px;
 }
 .submit {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -259,8 +324,8 @@ button {
   }
   form {
     width: 100%;
-    background: rgba(236, 4, 4, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: white;
+    box-shadow: 0 8px 27px 0 rgba(54, 54, 56, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;

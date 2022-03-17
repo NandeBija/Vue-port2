@@ -40,6 +40,12 @@ export default {};
 #bod {
   min-height: 100 hv;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fc5356;
+}
 
 .home {
   min-height: 100vh;

@@ -1,5 +1,37 @@
 <template>
-  <section id="projects">
+  <!-- <section id="projects">
+    <div class="container" id="Projects">
+      <div class="pro">
+        <h1 class="h1">Some of my latest work</h1>
+        <h2 class="h2">
+          <span style="border-bottom: 3px solid red">Projects</span>
+        </h2>
+      </div>
+
+      <div class="row" v-if="projects">
+        <div v-for="project of projects" :key="project.title" class="col-sm-4">
+          <div class="card mb-3 shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <img
+                :src="project.img"
+                class="card-img-top"
+                alt="Timeline project"
+              />
+              <div class="hov">
+                <a :href="project.github" target="_blank">Github</a>
+                <a :href="project.live" target="_blank">Netlify</a>
+              </div>
+              <p>{{ project.description }}</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
     <div class="container" id="Projects">
       <div class="pro">
         <h1 class="h1">Some of my latest work</h1>
@@ -8,8 +40,13 @@
         </h2>
       </div>
       <div class="row" v-if="projects">
-        <div v-for="project of projects" :key="project.title" class="col-sm-4">
-          <div class="card mb-3 shadow-lg">
+        <!-- feaure box -->
+        <div
+          v-for="project of projects"
+          :key="project.title"
+          class="col-sm-6 col-lg-4"
+        >
+          <div class="feature-box-1">
             <div class="card-body">
               <h5 class="card-title">{{ project.title }}</h5>
               <img
@@ -57,7 +94,7 @@ export default {
           title: "Maths calculator",
           github: "https://github.com/NandeBija/calculator.git",
           live: "https://distracted-varahamihira-8bbd1d.netlify.app/",
-          description: "Description:|Perform mathematical calculations",
+          description: "Description:|Perform maths calculations",
           img: "https://i.postimg.cc/GhmBbt55/calculator.png",
           techStacks: ["HTML", "CSS", "JavaScript"],
         },
@@ -100,10 +137,105 @@ export default {
 </script>
 
 <style scoped>
-#projects {
+#Projects {
+  padding-top: 59px;
+}
+section {
   background-color: #f5d3d52c;
+}
+body {
+  margin-top: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.feature-box-1 {
+  padding: 32px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  margin: 15px 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  top: 0;
+}
+.feature-box-1 * {
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+.feature-box-1 .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #fc5356;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 22px;
+  font-size: 27px;
+}
+.feature-box-1 .icon i {
+  line-height: 70px;
+}
+.feature-box-1 h5 {
+  font-weight: 600;
+}
+.feature-box-1 p {
+  margin: 0;
+}
+.feature-box-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  border-radius: 10px;
+  width: 0;
+  background: #f08c93f3;
+  z-index: -1;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+.feature-box-1:hover {
+  top: -5px;
+}
+.feature-box-1:hover h5 {
+  color: #ffffff;
+}
+.feature-box-1:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.feature-box-1:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0;
+  right: auto;
+}
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+.section-title {
+  padding-bottom: 45px;
+}
+.pro {
+  padding-bottom: 4%;
+}
+#projects {
   min-height: 110vh;
   padding-top: 54px;
+  padding-bottom: 54px;
 }
 .h2,
 h2 {
@@ -117,14 +249,54 @@ h1 {
   font-size: medium;
   padding-top: 1.5%;
 }
-.pro {
-  padding-bottom: 4%;
+.section-title h2 {
+  font-weight: 700;
+  color: #20247b;
+  font-size: 45px;
+  margin: 0 0 15px;
+  border-left: 5px solid #fc5356;
+  padding-left: 15px;
 }
 .card-body img {
   height: 18%;
   border-radius: 3%;
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  #projects {
+    background-color: #f5d3d52c;
+    min-height: 110vh;
+    padding-top: 54px;
+    padding-top: 10%;
+  }
+  .card img {
+    height: 110px;
+  }
+  #projects {
+    background-color: #f5d3d52c;
+    min-height: 275vh;
+    padding-top: 54px;
+  }
+  .card {
+    height: 430px;
+    width: 90%;
+    margin-left: 4%;
+  }
+  .card-body img {
+    min-height: 180px;
+    border-radius: 3%;
+  }
+}
+.hov a {
+  color: red;
+  display: inline-block;
+  padding: 3px;
+}
+/*
+
+
+
+
 
 .card {
   column-gap: 50px;
@@ -141,32 +313,7 @@ h1 {
   transition: transform 0.5s ease-in-out;
   transform: scale(1.04);
 }
-.hov a {
-  color: red;
-  display: inline-block;
-  padding: 3px;
-}
 
-@media screen and (max-width: 600px) {
-  .card {
-    min-height: 150px;
-  }
-  .card img {
-    height: 110px;
-  }
-  #projects {
-    background-color: #f5d3d52c;
-    min-height: 275vh;
-    padding-top: 54px;
-  }
-  .card {
-    min-height: 400px;
-    width: 90%;
-    margin-left: 4%;
-  }
-  .card-body img {
-    height: 180px;
-    border-radius: 3%;
-  }
-}
+
+ */
 </style>

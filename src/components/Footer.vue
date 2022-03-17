@@ -31,12 +31,15 @@ export default {};
 p {
   padding-top: 9px;
 }
+a {
+  text-decoration: none;
+}
 .hov a {
   padding-left: 15px;
 }
 a:hover {
   padding-left: 15px;
-  color: #d69f7e;
+  color: #fc5356;
 }
 @media screen and (max-width: 600px) {
   p {
