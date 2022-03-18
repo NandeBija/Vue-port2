@@ -39,6 +39,10 @@ export default {
 </script>
 
 <style>
+* {
+  font-family: "Rajdhani", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
 body {
   margin: 0px;
   overflow-x: hidden;

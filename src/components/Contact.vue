@@ -74,7 +74,7 @@
                           </div>
 
                           <a
-                            class="btn btn-primary btn-lg btn-block"
+                            class="btn btn-primary btn-lg "
                             style="background-color: #3b5998"
                             href="https://www.linkedin.com/in/nande-bija-6333441b8/"
                             role="button"
@@ -226,16 +226,17 @@ input[type="checkbox"] {
   box-shadow: 20px;
 }
 .btn {
-  margin-left: 110px;
+  margin-left: 115px;
   text-align: center;
   height: 55px;
   width: 300px;
+  border-radius: 45px;
 }
 
 button {
   background: #dc3545;
   border: 1px;
-  float: right;
+  /* float: right; */
   color: white;
   padding-bottom: 20px;
 
@@ -258,6 +259,9 @@ button:hover{
     font-size: 60px;
     padding: 20px;
   }
+  .btn {
+  margin: auto;
+}
   #cont2 {
     background-color: #f5d3d559;
     padding-bottom: 80px;
