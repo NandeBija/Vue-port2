@@ -118,7 +118,7 @@ export default {
           title: "CRUD operations ",
           github: "https://github.com/NandeBija/CRUD-exersice.git",
           live: "https://dreamy-bassi-bf5eb4.netlify.app/",
-          description: "Description:|Create, Read, Update, and Delete",
+          description: "Description:|Create, Update, and Delete",
           img: "https://i.postimg.cc/kGxLZ7xN/CRUD.png",
           techStacks: ["HTML", "CSS"],
         },
