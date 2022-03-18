@@ -28,6 +28,7 @@ export default {};
 </script>
 
 <style scoped>
+
 p {
   padding-top: 9px;
 }

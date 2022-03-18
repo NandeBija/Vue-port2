@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <!-- <hr class="seperater"> </hr> -->
+    
   </section>
 </template>
 

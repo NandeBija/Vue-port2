@@ -128,7 +128,7 @@ body {
   text-decoration: none;
   padding: 1rem 2rem;
   border: rgb(255, 253, 253) 2px solid;
-  border-radius: 30%;
+  border-radius: 45px;
   margin-top: 40px;
   opacity: 0;
   animation-name: btn;

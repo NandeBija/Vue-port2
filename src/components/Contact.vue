@@ -81,7 +81,7 @@
                           >
                             <img
                               src="https://img.icons8.com/fluency/30/000000/linkedin.png"
-                              style="padding: 8px"
+                              style="padding: 8px; width: "
                             />Connect with LinkedIn
                           </a>
                         </form>
@@ -92,68 +92,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col">
-            <div class="container"> -->
-          <!-- <form
-                action="https://formspree.io/f/xknyjnke"
-                method="post"
-                target="_blank" -->
-          <!-- > -->
-          <!-- the 'dot prevent' prevents the form from cleaaring the data back to default after submitting -->
-
-          <!-- <label> Name:</label>
-                <input
-                  name="name"
-                  type="text"
-                  required
-                  v-model="name"
-                  placeholder="Enter full name and surname"
-                />
-                <label> Email:</label>
-                <input
-                  type="email"
-                  required
-                  v-model="email"
-                  placeholder="Enter your email"
-                />
-
-                <label> Number:</label>
-                <input
-                  type="text"
-                  required
-                  v-model="number"
-                  placeholder="Enter your number"
-                />
-                <div v-if="numberError" class="number">{{ numberError }}</div> -->
-
-          <!--  dropdown for the role of whoever uses the form-->
-          <!-- <label> Role:</label>
-                <select v-model="role">
-                  <option value="developer">Web developer</option>
-                  <option value="designer">Web designer</option>
-                  <option value="interested">Interested party</option>
-                  <option value="other">Other</option>
-                </select>
-                <label for="inputMessage"> Message:</label>
-                <textarea
-                  class="form-control"
-                  name="message"
-                  id="inputMessage"
-                  rows="5"
-                  required
-                >
-                </textarea> -->
-          <!-- working with checkboxes using booleans  -->
-          <!-- <div class="terms">
-                  <input type="checkbox" v-model="terms" required />
-                  <label> Accept terms and conditions</label>
-                </div>
-                <div class="submit">
-                  <button @click="submit">Submit</button>
-                </div>
-              </form> -->
-          <!-- </div>
-          </div> -->
+          
         </div>
       </div>
     </div>
@@ -201,6 +140,7 @@ form {
   border-radius: 10px;
   border-radius: 10px;
 }
+
 .img-fluid {
   height: 100%;
   width: 100%;
@@ -286,24 +226,32 @@ input[type="checkbox"] {
   box-shadow: 20px;
 }
 .btn {
-  margin-left: 80px;
+  margin-left: 110px;
   text-align: center;
   height: 55px;
+  width: 300px;
 }
+
 button {
   background: #dc3545;
   border: 1px;
   float: right;
+  color: white;
   padding-bottom: 20px;
 
   padding: 5px 15px;
   border-radius: 20px;
+}
+button:hover{
+  background-color: #77161f ;
+  
 }
 .submit {
   text-align: center;
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
 
 @media screen and (max-width: 600px) {
   .address i {
