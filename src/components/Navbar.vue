@@ -3,7 +3,7 @@
     <a href="#home" class="active"
       >Home <i class="fa fa-home" aria-hidden="true"></i
     ></a>
-    <a href="#About">About <i class="fa fa-user"></i></a>
+    <a href="#Abt">About <i class="fa fa-user"></i></a>
     <a href="#resume">Resume <i class="fa fa-briefcase"></i></a>
     <a href="#Projects">Projects <i class="fa fa-cogs"></i></a>
     <a href="#testimonil">Testimonials <i class="fa fa-commenting-o"></i></a>
