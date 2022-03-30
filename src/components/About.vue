@@ -71,7 +71,7 @@
                 class="skills-icons"
               />
             </div>
-            <h3>HTML 5</h3>
+            <h3>HTML</h3>
           </div>
         </div>
 
@@ -84,7 +84,7 @@
                 class="skills-icons"
               />
             </div>
-            <h3>CSS3</h3>
+            <h3>CSS</h3>
           </div>
         </div>
 
@@ -238,7 +238,7 @@ h1 {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 150px;
+  padding-top: 30px;
 }
 .container {
   min-height: 30vh;

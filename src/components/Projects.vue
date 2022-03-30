@@ -57,6 +57,7 @@
               <div class="hov">
                 <a :href="project.github" target="_blank">Github</a>
                 <a :href="project.live" target="_blank">Netlify</a>
+                <a :href="project.heroku" target="_blank">Backend</a>
               </div>
               <p>{{ project.description }}</p>
               <p></p>
@@ -78,6 +79,7 @@ export default {
           title: "BMI calculator",
           github: "https://github.com/NandeBija/BMI.git",
           live: "https://vigorous-austin-12a137.netlify.app/",
+          // heroku:"",
           description: "|Calculate your Body Mass Index ",
           img: "https://i.postimg.cc/7LmrVPqp/BMI.png",
           techStacks: ["HTML", "CSS", "JavaScript"],
@@ -86,6 +88,7 @@ export default {
           title: "Point of Sale",
           github: "https://github.com/NandeBija/Glasses-ecommerce.git",
           live: "https://elastic-saha-6c5e72.netlify.app/",
+          // heroku:"",
           description: "|Sunglasses ecommerce store",
           img: "https://i.postimg.cc/SRzWdsbd/ecommerce.png",
           techStacks: ["HTML", "CSS", "JavaScript", "Vue JS"],
@@ -94,6 +97,7 @@ export default {
           title: "Maths calculator",
           github: "https://github.com/NandeBija/calculator.git",
           live: "https://distracted-varahamihira-8bbd1d.netlify.app/",
+          // heroku:"",
           description: "|Perform maths calculations",
           img: "https://i.postimg.cc/GhmBbt55/calculator.png",
           techStacks: ["HTML", "CSS", "JavaScript"],
@@ -102,22 +106,25 @@ export default {
           title: "Speed reactor game",
           github: "https://github.com/NandeBija/ReactionTImer_game.git",
           live: "https://silly-kare-81e9a0.netlify.app/",
+          // heroku:"",
           description: "|Reaction timer game to test your reflexes",
           img: "https://i.postimg.cc/DzzM7rKM/reactor.png",
           techStacks: ["HTML", "CSS", "JavaScript"],
         },
         {
-          title: "Cards projects",
+          title: "Fullstack project",
           github: "https://github.com/NandeBija/Prac3_Cardss.git",
-          //   live: "",
-          description: "|Card display",
-          img: "https://i.postimg.cc/fT3p9jtn/cards2.png",
+          live: "https://jamylee-fullstack-project.netlify.app/",
+          heroku: "https://projectbackendnande.herokuapp.com/users",
+          description: "|Group project Fullstack point of Sale",
+          img: "https://i.postimg.cc/1R2fXg68/Screenshot-from-2022-03-23-14-27-37.png",
           techStacks: ["HTML", "CSS"],
         },
         {
           title: "CRUD operations ",
-          github: "https://github.com/NandeBija/CRUD-exersice.git",
+          github: "https://github.com/Jamy-lee/Fullstack-project.git",
           live: "https://dreamy-bassi-bf5eb4.netlify.app/",
+          // heroku:"",
           description: "|Create, Read, Update, and Delete",
           img: "https://i.postimg.cc/kGxLZ7xN/CRUD.png",
           techStacks: ["HTML", "CSS"],
