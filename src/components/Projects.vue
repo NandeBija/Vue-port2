@@ -1,36 +1,4 @@
 <template>
-  <!-- <section id="projects">
-    <div class="container" id="Projects">
-      <div class="pro">
-        <h1 class="h1">Some of my latest work</h1>
-        <h2 class="h2">
-          <span style="border-bottom: 3px solid red">Projects</span>
-        </h2>
-      </div>
-
-      <div class="row" v-if="projects">
-        <div v-for="project of projects" :key="project.title" class="col-sm-4">
-          <div class="card mb-3 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title">{{ project.title }}</h5>
-              <img
-                :src="project.img"
-                class="card-img-top"
-                alt="Timeline project"
-              />
-              <div class="hov">
-                <a :href="project.github" target="_blank">Github</a>
-                <a :href="project.live" target="_blank">Netlify</a>
-              </div>
-              <p>{{ project.description }}</p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <section>
     <div class="container" id="Projects">
       <div class="pro">
@@ -146,6 +114,7 @@ export default {
 <style scoped>
 #Projects {
   padding-top: 59px;
+  padding-bottom: 50px;
 }
 section {
   background-color: #f5d3d52c;

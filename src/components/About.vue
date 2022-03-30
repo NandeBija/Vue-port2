@@ -238,7 +238,7 @@ h1 {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 .container {
   min-height: 30vh;
