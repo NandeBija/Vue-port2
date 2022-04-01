@@ -74,7 +74,7 @@
                           </div>
 
                           <a
-                            class="btn btn-primary btn-lg "
+                            class="btn btn-primary  "
                             style="background-color: #3b5998"
                             href="https://www.linkedin.com/in/nande-bija-6333441b8/"
                             role="button"

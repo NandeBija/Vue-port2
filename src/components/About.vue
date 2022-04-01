@@ -231,6 +231,10 @@ h1 {
   }
 }
 
+@media screen and (max-width:977){
+  
+}
+
 /* RECENT ABOUT STYLES */
 .curved {
   background-color: brown;

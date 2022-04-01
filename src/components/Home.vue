@@ -38,7 +38,7 @@ export default {};
   padding: 0px;
 }
 #bod {
-  min-height: 100 hv;
+  min-height: 100hv;
 }
 a {
   text-decoration: none;
@@ -49,7 +49,7 @@ a:hover {
 
 .home {
   min-height: 100vh;
-  background-image: url("https://ucarecdn.com/118482c6-5bbc-4de5-ade2-63c59873006f/image.png");
+  background-image: url("https://www.vegaslegalmagazine.com/wp-content/uploads/2016/01/Black-and-Red-HD-Wallpapers-White-Line-Backgrounds.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

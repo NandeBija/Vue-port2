@@ -32,24 +32,25 @@ export default {
 <style scoped>
 .topnav {
   overflow: hidden;
-  background-color: #000000;
+  background-color: white;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 600;
+  
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: courier new;
-  font-weight: bold;
+  /* font-family: courier new; */
+  /* font-weight: bold; */
 }
 
 .topnav a:hover {
@@ -64,7 +65,7 @@ export default {
 .topnav .icon {
   display: none;
 }
-.fa {
+/* .fa {
   position: relative;
   font-size: 22px;
   text-align: center;
@@ -74,7 +75,7 @@ export default {
 }
 .fa {
   color: #f2f2f2;
-}
+} */
 
 /* MEDIA QUERIES */
 
