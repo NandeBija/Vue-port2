@@ -24,8 +24,8 @@
               />
               <div class="hov">
                 <a :href="project.github" target="_blank">Github</a>
-                <a :href="project.live" target="_blank">Netlify</a>
-                <a :href="project.heroku" target="_blank">Backend</a>
+                <a :href="project.live" target="_blank">Live</a>
+                <!-- <a :href="project.heroku" target="_blank">Backend</a> -->
               </div>
               <p>{{ project.description }}</p>
               <p></p>
@@ -89,12 +89,39 @@ export default {
           techStacks: ["HTML", "CSS"],
         },
         {
-          title: "CRUD operations ",
-          github: "https://github.com/Jamy-lee/Fullstack-project.git",
-          live: "https://dreamy-bassi-bf5eb4.netlify.app/",
+          title: "Fullstack online Booking ",
+          github: "https://github.com/NandeBija/FinalProject-Frontend.git",
+          live: "https://dashing-tartufo-e48c0e.netlify.app/",
           // heroku:"",
-          description: "|Create, Read, Update, and Delete",
-          img: "https://i.postimg.cc/kGxLZ7xN/CRUD.png",
+          description: "|Online booking system for photographers",
+          img: "https://i.postimg.cc/fLnMt94B/Photographer-boking.jpg",
+          techStacks: ["HTML", "CSS"],
+        },
+        {
+          title: "WordPress Coffee ecommerce",
+          github: "https://dev-3pagesite.pantheonsite.io/",
+          live: "https://dev-3pagesite.pantheonsite.io/",
+          // heroku:"",
+          description: "|Online coffee shop",
+          img: "https://i.postimg.cc/63XN5xRP/Coffee-ecommerce.jpg",
+          techStacks: ["HTML", "CSS"],
+        },
+        {
+          title: "WordPress Portfolio",
+          github: "https://dev-nandebijaportfolio.pantheonsite.io/",
+          live: "https://dev-nandebijaportfolio.pantheonsite.io/",
+          // heroku:"",
+          description: "|WordPress portfolio",
+          img: "https://i.postimg.cc/PxgvqxKj/Wordpress-portfolio.jpg",
+          techStacks: ["HTML", "CSS"],
+        },
+        {
+          title: "WordPress Plantshop ecommerce",
+          github: "https://dev-nandeecommerce.pantheonsite.io/",
+          live: "https://dev-nandeecommerce.pantheonsite.io/",
+          // heroku:"",
+          description: "|WordPress portfolio",
+          img: "https://i.postimg.cc/Gh7rPNwB/Plant-ecommerce.jpg",
           techStacks: ["HTML", "CSS"],
         },
       ],
