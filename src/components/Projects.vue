@@ -124,6 +124,15 @@ export default {
           img: "https://i.postimg.cc/Gh7rPNwB/Plant-ecommerce.jpg",
           techStacks: ["HTML", "CSS"],
         },
+         {
+          title: "WordPress Blog",
+          github: "https://dev-nandeblog.pantheonsite.io/",
+          live: "https://dev-nandeblog.pantheonsite.io/",
+          // heroku:"",
+          description: "|WordPress Events update blog",
+          img: "https://i.postimg.cc/HW3yc0xX/events-blog.jpg",
+          techStacks: ["HTML", "CSS"],
+        },
       ],
     };
   },
